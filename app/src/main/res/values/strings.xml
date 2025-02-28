@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyPlayer</string>
+    <string name="intro_1">1. 点击右下角添加曲目</string>
+    <string name="intro_2">2. 设置定时</string>
+    <string name="intro_3">3. 开始播放</string>
+    <string name="start">开始</string>
+    <string name="terminate">终止</string>
+    <string name="minute">分钟</string>
+    <string name="expand">展开</string>
+    <string name="collapse">收起</string>
+    <string name="remove">删除</string>
+    <string name="pick_uri">选择 URI</string>
+    <string name="uri_input_hint">直接输入网址或点击按钮选择本地文件</string>
+    <string name="pick_system_media">选择系统文件</string>
+    <string name="ok">确定</string>
+    <string name="add_audio">添加曲目</string>
+</resources>
