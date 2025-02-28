@@ -19,6 +19,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.mutableIntStateOf
@@ -87,9 +88,7 @@ fun MyPage() {
 
     Scaffold(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(WindowInsets.safeContent.asPaddingValues()),
-        topBar = { Text(stringResource(R.string.app_name)) },
+            .fillMaxSize(),
         floatingActionButton = {
             if (!isRunning.value) {
                 FloatingActionButton(
@@ -104,7 +103,7 @@ fun MyPage() {
         }
     ) { innerPadding ->
         Column(
-            modifier = Modifier.padding(innerPadding)
+            modifier = Modifier.padding(innerPadding).padding(horizontal = 16.dp)
         ) {
             // 第一步 选曲
             Text(stringResource(R.string.intro_1))
